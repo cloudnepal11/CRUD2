@@ -3,7 +3,6 @@
 <head>
     <!-- Load file CSS Bootstrap offline -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap/css/dataTables.bootstrap.min.css">
 </head>
 <body>
 <div class="container">
@@ -32,9 +31,7 @@
         }
 ?>
 
-	<div class = "table-responsive">
-		<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
-        <br>
+	<table class="table table-bordered table-hover">
         <thead>
         <tr>
             <th>No</th>
@@ -76,7 +73,6 @@
     </table>
     <a href="create.php" class="btn btn-primary" role="button">Tambah Data</a>
 
-</div>
 </div>
 </body>
 </html>
