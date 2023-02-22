@@ -45,7 +45,7 @@
 					document.location = 'ubahfoto.php?id_peserta=$id'; 
 				</script>";
 		}else{
-			move_uploaded_file($_FILES["foto"]["tmp_name"],"foto/".$image);
+			move_uploaded_file($_FILES["foto"]["tmp_name"],"efs/foto/".$image);
 			//Query update data pada tabel anggota
 			$sql="UPDATE peserta set 
 				foto_peserta='$image'
