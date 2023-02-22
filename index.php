@@ -70,8 +70,8 @@
                 <td><?php echo $data["nama_peserta"]; ?></td>
                 <td><?php echo $data["asal_sekolah"];   ?></td>
                 <td><?php echo $data["no_peserta"];   ?></td>
-                <td><a href="foto/<?php echo htmlentities($data['foto_peserta']);?>" target="blank"><img src="foto/<?php echo htmlentities($data['foto_peserta']);?>" width="100"></a></td>
-                <td><a href="bukti/<?php echo htmlentities($data['bukti_peserta']);?>" target="blank">Lihat Bukti</a></td>
+                <td><a href="efs/foto/<?php echo htmlentities($data['foto_peserta']);?>" target="blank"><img src="efs/foto/<?php echo htmlentities($data['foto_peserta']);?>" width="100"></a></td>
+                <td><a href="efs/bukti/<?php echo htmlentities($data['bukti_peserta']);?>" target="blank">Lihat Bukti</a></td>
                 <td>
                     <a href="update.php?id_peserta=<?php echo htmlspecialchars($data['id_peserta']); ?>" class="btn btn-warning" role="button">Update</a>
 					<a href="delete.php?id_peserta=<?php echo $data['id_peserta'];?>" onclick="return confirm('Apakah anda yakin akan menghapus <?php echo $data['nama_peserta'];?>?')" class="btn btn-danger" role="button">Hapus</a>
