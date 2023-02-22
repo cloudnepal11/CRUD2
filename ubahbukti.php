@@ -45,7 +45,7 @@
 					document.location = 'ubahbukti.php?id_peserta=$id'; 
 				</script>";
 		}else{
-			move_uploaded_file($_FILES["bukti"]["tmp_name"],"bukti/".$bukti2);
+			move_uploaded_file($_FILES["bukti"]["tmp_name"],"efs/bukti/".$bukti2);
 			//Query update data pada tabel anggota
 			$sql="UPDATE peserta set 
 				bukti_peserta='$bukti2'
