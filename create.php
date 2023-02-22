@@ -41,8 +41,8 @@
 		if($sizefoto>$maxsize || $sizebukti>$maxsize){
             echo "<div class='alert alert-danger'> Ukuran Foto/File tidak boleh lebih dari 2MB!.</div>";
 		}else{
-        move_uploaded_file($_FILES["foto"]["tmp_name"],"foto/".$image);
-        move_uploaded_file($_FILES["bukti"]["tmp_name"],"bukti/".$bukti2);
+        move_uploaded_file($_FILES["foto"]["tmp_name"],"efs/foto/".$image);
+        move_uploaded_file($_FILES["bukti"]["tmp_name"],"efs/bukti/".$bukti2);
         
 
         //Query input menginput data kedalam tabel anggota
