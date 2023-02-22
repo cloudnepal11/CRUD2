@@ -84,11 +84,11 @@
 
         </div>
         <div class="form-group">
-			<a href="foto/<?php echo htmlentities($data['foto_peserta']);?>" target="blank"><img src="foto/<?php echo htmlentities($data['foto_peserta']);?>" width="100"></a>
+			<a href="efs/foto/<?php echo htmlentities($data['foto_peserta']);?>" target="blank"><img src="efs/foto/<?php echo htmlentities($data['foto_peserta']);?>" width="100"></a>
 			<a href="ubahfoto.php?id_peserta=<?php echo $data['id_peserta']; ?>" class="btn btn-danger">Ubah Foto</a>
         </div>
         <div class="form-group">
-			<a href="bukti/<?php echo htmlentities($data['bukti_peserta']);?>" target="blank">Lihat Bukti</a>
+			<a href="efs/bukti/<?php echo htmlentities($data['bukti_peserta']);?>" target="blank">Lihat Bukti</a>
 			<a href="ubahbukti.php?id_peserta=<?php echo $data['id_peserta']; ?>" class="btn btn-danger">Ubah Bukti</a>
         </div>
         <input type="hidden" name="id" value="<?php echo $data['id_peserta']; ?>" />
