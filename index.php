@@ -48,6 +48,17 @@
         include "koneksi.php";
         $sql="select * from peserta order by nama_peserta ASC";
         $hasil=mysqli_query($kon,$sql);
+		$count = mysqli_num_rows($hasil);
+		if($count==0){
+            ?>
+            <tbody>
+            <tr>
+                <td colspan="7"><center>Tidak ada data.</center></td>
+            </tr>
+            </tbody>
+            <?php
+			
+		}else{
         $no=0;
         while ($data = mysqli_fetch_array($hasil)) {
             $no++;
@@ -69,6 +80,7 @@
             </tbody>
             <?php
         }
+		}
         ?>
     </table>
     <a href="create.php" class="btn btn-primary" role="button">Tambah Data</a>
