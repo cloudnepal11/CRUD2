@@ -35,7 +35,7 @@ Menghubungkan EC2 dengan Bucket
 - aws s3 ls (untuk melihat semua s3)
 - aws s3 ls s3://namabucket (untuk melihat isi bucket)
 - aws s3 cp test.txt s3://namabucket (perintah untuk copy ke bucket)
-- aws s3 cp s3://namabucket/namafile (untuk mendownload file dari bucket)
+- aws s3 cp s3://namabucket/namafile .  (untuk mendownload file dari bucket)
 
 **********************************
 Mendapatkan Akseskey id
