@@ -59,7 +59,7 @@ Mounting S3 Bucket
 - Buka EC2
 - sudo amazon-linux-extras install epel -y
 - sudo yum install s3fs-fuse -y
-- echo akseskeyid:secretaccess key > .pass_key
+- echo akseskeyid:secretaccesskey > .pass_key
 - ls -la (cek apakah sudah ter create)
 - chmod 600 namafile
 - mkdir mount (buat folder yang akan dimount)
